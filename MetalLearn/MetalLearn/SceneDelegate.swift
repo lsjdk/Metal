@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  Metal
+//  MetalLearn
 //
 //  Created by 李世举 on 2022/2/20.
 //
