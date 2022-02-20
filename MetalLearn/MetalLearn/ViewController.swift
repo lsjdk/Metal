@@ -6,14 +6,30 @@
 //
 
 import UIKit
+import MetalKit
 
 class ViewController: UIViewController {
 
+    var colorRender: LSJColorRender?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        let v = MTLCreateSystemDefaultDevice()
+        guard let kView = self.view as? MTKView else {
+            return
+        }
+        guard let device = MTLCreateSystemDefaultDevice() else {
+            return
+        }
+        
+        kView.device = device
+        
+        self.colorRender = LSJColorRender.init(With: kView)
+        
+        kView.delegate = self.colorRender
+        
+//        kView.preferredFramesPerSecond = 60
     }
 
 
