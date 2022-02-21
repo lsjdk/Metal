@@ -14,6 +14,8 @@
 		56B3941227C2342700DCA917 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56B3941127C2342700DCA917 /* Assets.xcassets */; };
 		56B3941527C2342700DCA917 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56B3941327C2342700DCA917 /* LaunchScreen.storyboard */; };
 		56B3941D27C235CF00DCA917 /* LSJColorRender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B3941C27C235CF00DCA917 /* LSJColorRender.swift */; };
+		56B3942027C2419A00DCA917 /* LSJTriangleRender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B3941F27C2419A00DCA917 /* LSJTriangleRender.swift */; };
+		56B3942227C2454A00DCA917 /* LSJTriangle.metal in Sources */ = {isa = PBXBuildFile; fileRef = 56B3942127C2454A00DCA917 /* LSJTriangle.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		56B3941427C2342700DCA917 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56B3941627C2342700DCA917 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56B3941C27C235CF00DCA917 /* LSJColorRender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSJColorRender.swift; sourceTree = "<group>"; };
+		56B3941F27C2419A00DCA917 /* LSJTriangleRender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSJTriangleRender.swift; sourceTree = "<group>"; };
+		56B3942127C2454A00DCA917 /* LSJTriangle.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = LSJTriangle.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,12 +66,22 @@
 				56B3940A27C2342500DCA917 /* SceneDelegate.swift */,
 				56B3940C27C2342500DCA917 /* ViewController.swift */,
 				56B3941C27C235CF00DCA917 /* LSJColorRender.swift */,
+				56B3941E27C2417900DCA917 /* Triangle */,
 				56B3940E27C2342500DCA917 /* Main.storyboard */,
 				56B3941127C2342700DCA917 /* Assets.xcassets */,
 				56B3941327C2342700DCA917 /* LaunchScreen.storyboard */,
 				56B3941627C2342700DCA917 /* Info.plist */,
 			);
 			path = MetalLearn;
+			sourceTree = "<group>";
+		};
+		56B3941E27C2417900DCA917 /* Triangle */ = {
+			isa = PBXGroup;
+			children = (
+				56B3941F27C2419A00DCA917 /* LSJTriangleRender.swift */,
+				56B3942127C2454A00DCA917 /* LSJTriangle.metal */,
+			);
+			path = Triangle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +156,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				56B3940D27C2342500DCA917 /* ViewController.swift in Sources */,
+				56B3942227C2454A00DCA917 /* LSJTriangle.metal in Sources */,
+				56B3942027C2419A00DCA917 /* LSJTriangleRender.swift in Sources */,
 				56B3940927C2342500DCA917 /* AppDelegate.swift in Sources */,
 				56B3940B27C2342500DCA917 /* SceneDelegate.swift in Sources */,
 				56B3941D27C235CF00DCA917 /* LSJColorRender.swift in Sources */,
